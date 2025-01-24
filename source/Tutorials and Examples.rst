@@ -46,7 +46,7 @@ Replace the default title bar:
 
    from clera import Window, Titlebar
 
-   window = Window()
+   window = Window(frame=False)
    Titlebar(
        title='Custom Title',
        text_color='white',
