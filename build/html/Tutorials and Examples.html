@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tutorials and Examples &#8212; Clera  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=913c302d" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tutorials and Examples';</script>
+    <link rel="icon" href="_static/toon-icon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Troubleshooting" href="Troubleshooting.html" />
+    <link rel="prev" title="Layouts Overview" href="Layouts%20Overview.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/main-banner.png" class="logo__image only-light" alt=""/>
+    <img src="_static/main-banner-dark.png" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title"><div id="sidebar_mini"><a href="https://pepy.tech/projects/clera" style="margin-right: 10px;"><img src="https://static.pepy.tech/badge/clera" alt="PyPI Downloads"></a><a href="https://pypi.org/project/clera/"><img src="https://img.shields.io/pypi/v/clera"></a></div></p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Table of contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation%20Guide.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting%20Started.html">Quick Start / Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Widgets%20Overview.html">Widgets Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Layouts%20Overview.html">Layouts Overview</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Code of Conduct</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Tutorials and Examples.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Tutorials and Examples</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorial-hello-world">Tutorial: Hello World</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-example-login-form">Advanced Example: Login Form</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-title-bars">Custom Title Bars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-updates">Dynamic Updates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-widgets">Styling Widgets</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="tutorials-and-examples">
+<h1>Tutorials and Examples<a class="headerlink" href="#tutorials-and-examples" title="Link to this heading">#</a></h1>
+<section id="tutorial-hello-world">
+<h2>Tutorial: Hello World<a class="headerlink" href="#tutorial-hello-world" title="Link to this heading">#</a></h2>
+<p>Create your first Clera application:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">clera</span><span class="w"> </span><span class="kn">import</span> <span class="n">Window</span><span class="p">,</span> <span class="n">Text</span><span class="p">,</span> <span class="n">Box</span>
+
+<span class="n">window</span> <span class="o">=</span> <span class="n">Window</span><span class="p">()</span>
+<span class="n">Box</span><span class="p">([</span>
+    <span class="p">[</span><span class="n">Text</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)]</span>
+<span class="p">])</span>
+<span class="n">window</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="advanced-example-login-form">
+<h2>Advanced Example: Login Form<a class="headerlink" href="#advanced-example-login-form" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">clera</span><span class="w"> </span><span class="kn">import</span> <span class="n">Window</span><span class="p">,</span> <span class="n">Box</span><span class="p">,</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">Text</span>
+
+<span class="n">window</span> <span class="o">=</span> <span class="n">Window</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">login</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Login submitted&#39;</span><span class="p">)</span>
+
+<span class="n">Box</span><span class="p">([</span>
+    <span class="p">[</span><span class="n">Text</span><span class="p">(</span><span class="s1">&#39;Login Form&#39;</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">Input</span><span class="p">(</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Username&#39;</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">Input</span><span class="p">(</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Password&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;password&#39;</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">Button</span><span class="p">(</span><span class="s1">&#39;Submit&#39;</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="n">login</span><span class="p">)]</span>
+<span class="p">])</span>
+
+<span class="n">window</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="custom-title-bars">
+<h2>Custom Title Bars<a class="headerlink" href="#custom-title-bars" title="Link to this heading">#</a></h2>
+<p>Replace the default title bar:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">clera</span><span class="w"> </span><span class="kn">import</span> <span class="n">Window</span><span class="p">,</span> <span class="n">Titlebar</span>
+
+<span class="n">window</span> <span class="o">=</span> <span class="n">Window</span><span class="p">()</span>
+<span class="n">Titlebar</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Custom Title&#39;</span><span class="p">,</span>
+    <span class="n">text_color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span>
+    <span class="n">background_color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span>
+<span class="p">)</span>
+<span class="n">window</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="dynamic-updates">
+<h2>Dynamic Updates<a class="headerlink" href="#dynamic-updates" title="Link to this heading">#</a></h2>
+<p>Update widgets dynamically:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">window</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="s1">&#39;widget_id&#39;</span><span class="p">,</span> <span class="n">Button</span><span class="p">(</span><span class="s1">&#39;Updated Button&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="styling-widgets">
+<h2>Styling Widgets<a class="headerlink" href="#styling-widgets" title="Link to this heading">#</a></h2>
+<p>You can use CSS to style widgets. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">clera</span><span class="w"> </span><span class="kn">import</span> <span class="n">Window</span><span class="p">,</span> <span class="n">Box</span><span class="p">,</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">Text</span>
+
+<span class="n">window</span> <span class="o">=</span> <span class="n">Window</span><span class="p">()</span>
+
+<span class="n">css</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">Button {</span>
+<span class="s1">    border: 1px solid black;</span>
+<span class="s1">    color: red;</span>
+<span class="s1">    background: yellow;</span>
+<span class="s1">}</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="n">Box</span><span class="p">([</span>
+    <span class="p">[</span><span class="n">Button</span><span class="p">(</span><span class="s1">&#39;Click Me!&#39;</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="n">call</span><span class="p">(</span><span class="nb">print</span><span class="p">,</span> <span class="s2">&quot;Clicked!&quot;</span><span class="p">))]</span>
+<span class="p">])</span>
+
+<span class="n">window</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">css</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Applying External Styles with <code class="docutils literal notranslate"><span class="pre">clera</span></code></p>
+<p>In <code class="docutils literal notranslate"><span class="pre">clera</span></code>, you can apply custom styles to your user interface
+elements using an external stylesheet with the <code class="docutils literal notranslate"><span class="pre">.cx</span></code> extension. This
+approach allows for a more organized and flexible way to manage your
+UI’s appearance, separating the logic from the design. Here’s how you
+can style your elements:</p>
+<p><strong>Example Code</strong>: <code class="docutils literal notranslate"><span class="pre">interface.py</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">clera</span><span class="w"> </span><span class="kn">import</span> <span class="n">Window</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">Textarea</span><span class="p">,</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Box</span><span class="p">,</span> <span class="n">link</span>
+<span class="n">link</span><span class="p">(</span><span class="s1">&#39;style.cx&#39;</span><span class="p">)</span>  <span class="c1"># Link to the external stylesheet</span>
+<span class="n">window</span> <span class="o">=</span> <span class="n">Window</span><span class="p">(</span><span class="s1">&#39;interface&#39;</span><span class="p">,</span> <span class="n">fixed_size</span><span class="o">=</span><span class="p">(</span><span class="mi">218</span><span class="p">,</span> <span class="mi">166</span><span class="p">))</span>
+
+<span class="n">layout</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="n">Button</span><span class="p">(</span><span class="s1">&#39;One&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;one_id&#39;</span><span class="p">),</span> <span class="n">Button</span><span class="p">(</span><span class="s1">&#39;Two&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;two_id&#39;</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">Textarea</span><span class="p">(</span><span class="s1">&#39;text_id&#39;</span><span class="p">,</span> <span class="s1">&#39;Textarea Widget&#39;</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">Input</span><span class="p">(</span><span class="s1">&#39;Input Widget&#39;</span><span class="p">,</span> <span class="s1">&#39;input_id&#39;</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">Button</span><span class="p">(</span><span class="s1">&#39;Three&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;three_id&#39;</span><span class="p">)]</span>
+<span class="p">]</span>
+<span class="n">Box</span><span class="p">(</span><span class="n">layout</span><span class="p">)</span>  <span class="c1"># Organize the layout within a box</span>
+<span class="n">window</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>  <span class="c1"># Run the application</span>
+</pre></div>
+</div>
+<p><strong>External Stylesheet:</strong> <code class="docutils literal notranslate"><span class="pre">style.cx</span></code></p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">@</span><span class="k">interface</span><span class="p">.</span><span class="nc">py</span><span class="w"> </span><span class="c">/* Targeting the interface.py file */</span>
+
+<span class="nt">window</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">background</span><span class="o">:</span><span class="w"> </span><span class="p">#</span><span class="nn">171717</span><span class="o">;</span>
+<span class="p">}</span>
+
+<span class="nt">button</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">one_id</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">text_id</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">three_id</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#5C7CFA</span><span class="p">;</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">input_id</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">two_id</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>How It Works:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Linking the Stylesheet:</strong></p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">link('style.cx')</span></code> command in your <code class="docutils literal notranslate"><span class="pre">interface.py</span></code> script
+connects the Python interface to the external CSS file. This
+allows you to apply styles written in <code class="docutils literal notranslate"><span class="pre">style.cx</span></code> to the UI
+components defined in the Python code.</p></li>
+</ul>
+</li>
+<li><p><strong>Styling Elements:</strong></p>
+<ul class="simple">
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">style.cx</span></code> file, you can specify CSS rules to style the
+different UI elements. Each UI element, such as buttons or
+textarea, can be targeted using either general tags (like
+<code class="docutils literal notranslate"><span class="pre">button</span></code>) or specific IDs (like <code class="docutils literal notranslate"><span class="pre">one_id</span></code> for a button with a
+unique ID).</p></li>
+<li><p>For example, <code class="docutils literal notranslate"><span class="pre">one_id</span></code> styles the button with the ID <code class="docutils literal notranslate"><span class="pre">one_id</span></code>,
+setting its background color to red and text color to yellow.</p></li>
+</ul>
+</li>
+<li><p><strong>CSS Syntax:</strong></p>
+<ul class="simple">
+<li><p>The syntax used in the <code class="docutils literal notranslate"><span class="pre">.cx</span></code> file is similar to standard CSS but
+is specifically designed to work with <code class="docutils literal notranslate"><span class="pre">clera</span></code>. Each style rule
+specifies properties such as <code class="docutils literal notranslate"><span class="pre">background</span></code>, <code class="docutils literal notranslate"><span class="pre">color</span></code>,
+<code class="docutils literal notranslate"><span class="pre">border</span></code>, and <code class="docutils literal notranslate"><span class="pre">border-radius</span></code> to customize the appearance of
+UI elements.</p></li>
+<li><p>Additionally, you can target specific components with their unique
+IDs, ensuring that you can apply precise styles to individual
+widgets.</p></li>
+</ul>
+</li>
+</ol>
+<p>This approach of using external styling ensures that the appearance of
+your application is modular and easily maintainable, while the Python
+code remains focused on the functionality.```</p>
+<hr class="docutils" />
+<span class="target" id="troubleshooting-1"></span></section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Layouts%20Overview.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Layouts Overview</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Troubleshooting.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Troubleshooting</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorial-hello-world">Tutorial: Hello World</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-example-login-form">Advanced Example: Login Form</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-title-bars">Custom Title Bars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-updates">Dynamic Updates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#styling-widgets">Styling Widgets</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Erasmus A. Junior
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023, GNU LGPLv3.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
