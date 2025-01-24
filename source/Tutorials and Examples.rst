@@ -101,7 +101,9 @@ can style your elements:
 .. code:: python
 
    from clera import Window, Button, Textarea, Input, Box, link
+
    link('style.cx')  # Link to the external stylesheet
+
    window = Window('interface', fixed_size=(218, 166)) 
 
    layout = [
@@ -110,7 +112,9 @@ can style your elements:
        [Input('Input Widget', 'input_id')],
        [Button('Three', id='three_id')]
    ]
+
    Box(layout)  # Organize the layout within a box
+   
    window.run()  # Run the application
 
 **External Stylesheet:** ``style.cx``
