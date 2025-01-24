@@ -182,26 +182,27 @@ Step 5: Creating a Login Form
 
 .. code-block:: python
 
-    from clera import Window, Box, Input, Button, Text
+   from clera import Window, Box, Input, Button, Text, GET
 
-    window = Window()
+   window = Window()
 
-    def on_login():
-        print(f"Username: {username.value}, Password: {password.value}")
+   def on_login():
+      print(f"Username: {GET('uname')}, Password: {GET('pwd')}")
 
-    # Define input fields
-    username = Input(placeholder='Enter Username')
-    password = Input(placeholder='Enter Password', type='password')
+   # Define input fields
+   username = Input(id="uname", placeholder='Enter Username')
+   password = Input(id="pwd", placeholder='Enter Password', type='password')
 
-    # Arrange inputs and a button in a Box layout
-    Box([
-        [Text(value='Login Form', alignment='center')],
-        [username],
-        [password],
-        [Button(value='Submit', func=on_login)]
-    ])
 
-    window.run()
+   # Arrange inputs and a button in a Box layout
+   Box([
+      [Text(value='Login Form', alignment='center')],
+      [username],
+      [password],
+      [Button(value='Submit', func=on_login)]
+   ])
+
+   window.run()
 
 How It Works
 ~~~~~~~~~~~~
