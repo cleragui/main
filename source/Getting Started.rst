@@ -45,7 +45,7 @@ elements. In Clera, these elements are called “widgets.” To organize
 widgets within a window, Clera uses layouts. Think of a layout as a
 bookshelf and widgets as books placed on its shelves.
 
-.. figure:: /_static/shelf.jpg
+.. figure:: /_static/SHELF.jpg
    :width: 600px
    :align: center
 
