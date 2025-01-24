@@ -1,0 +1,12 @@
+.navbar-brand img {
+    max-height: 70px;  /* Adjust height as needed */
+    margin-bottom: 0;  /* Add space below the image */
+}
+
+#sidebar_mini {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: -20px;
+    margin-top: -5px;
+}
