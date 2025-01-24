@@ -114,12 +114,12 @@ A Text widget is used to display static or dynamic text.
 
 .. code-block:: python
 
-    from clera import Window, Text
+    from clera import Window, Text, Box
 
     window = Window()
 
     # Add a Text widget
-    Text(value='Hello, Clera!', alignment='center')
+    Box([[Text(value='Hello, Clera!', alignment='center')]])
 
     window.run()
 
@@ -132,7 +132,7 @@ Add a clickable Button that performs an action when clicked.
 
 .. code-block:: python
 
-    from clera import Window, Button
+    from clera import Window, Button, Box
 
     window = Window()
 
@@ -140,7 +140,7 @@ Add a clickable Button that performs an action when clicked.
         print("Button clicked!")
 
     # Add a Button widget
-    Button(value='Click Me', func=on_button_click)
+    Box([[Button(value='Click Me', func=on_button_click)]])
 
     window.run()
 
