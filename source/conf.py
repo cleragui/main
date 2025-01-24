@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Clera'
-copyright = '2023, GNU LGPLv3'
+copyright = '2025, GNU LGPLv3'
 author = 'Erasmus A. Junior'
 # release = '0.2.4'
 
