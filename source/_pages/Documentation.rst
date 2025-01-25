@@ -69,8 +69,7 @@ Contribution Process
 5. **Submit a Pull Request**
 
    -  Push your changes to your forked repository and open a pull
-      request to the `main
-      repository <https: github.com="" cleragui="" main.git="">`__.
+      request to the `main repository <https://github.com/cleragui/main/issues>`_.
    -  Provide a clear and detailed description of the changes made and
       why they’re necessary.
 
