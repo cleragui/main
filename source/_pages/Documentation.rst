@@ -34,7 +34,7 @@ We welcome contributions in the following ways:
    process outlined below to ensure a smooth integration of your
    changes.
 
--  **Suggesting Features**: Have a great idea? Open an issue and
+-  **Suggesting Features**: Have a great idea? Open an `issue <https://github.com/cleragui/main/issues>`__  and
    describe your suggestion in detail. We’d love to hear your thoughts!
 
 --------------
