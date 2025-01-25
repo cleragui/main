@@ -27,7 +27,7 @@ How to Contribute
 We welcome contributions in the following ways:
 
 -  **Reporting Bugs**: If you find any bugs, please report them by
-   opening an issue on our GitHub repository. Include details like steps
+   opening an `issue <https://github.com/cleragui/main/issues>`__ on our GitHub repository. Include details like steps
    to reproduce the bug and screenshots, if applicable.
 
 -  **Submitting Code**: If you want to contribute code, follow the
@@ -36,51 +36,6 @@ We welcome contributions in the following ways:
 
 -  **Suggesting Features**: Have a great idea? Open an issue and
    describe your suggestion in detail. We’d love to hear your thoughts!
-
-Contribution Process
-~~~~~~~~~~~~~~~~~~~~
-
-1. **Fork the Repository**
-
-   -  Navigate to the `main
-      repository <https: github.com="" cleragui="" main.git="">`__ and click the
-      “Fork” button to create your own copy.
-
-2. **Create a Branch**
-
-   -  Clone your forked repository locally and create a new branch for
-      your feature or fix:
-
-      .. code:: bash
-
-         git checkout -b feature-name
-
-3. **Make Changes**
-
-   -  Write clean, well-documented code and ensure it adheres to the
-      project’s coding standards. Include relevant test cases where
-      applicable.
-
-4. **Test Your Changes**
-
-   -  Run all tests to ensure your changes don’t break existing
-      functionality.
-
-5. **Submit a Pull Request**
-
-   -  Push your changes to your forked repository and open a pull request to the 
-
-.. raw:: html
-   <a href="https://github.com/cleragui/main/issues" target="_blank">main repository</a>.
-
-   -  Provide a clear and detailed description of the changes made and
-      why they’re necessary.
-
-6. **Collaborate**
-
-   -  Be available to discuss and address feedback or requested changes.
-      Collaborating effectively ensures a higher chance of your
-      contribution being merged.
 
 --------------
 
